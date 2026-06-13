@@ -1464,7 +1464,36 @@ footer {
     font-size:1.8rem;
     text-decoration:none;
     z-index:1000;
+} 
+   @media (max-width: 768px) {
+      .container,
+.contact-container,
+.footer-content,
+.review-container,
+.gallery-grid,
+.gaming-features,
+.highlights {
+    grid-template-columns: 1fr;
+    flex-direction: column;
 }
+      .nav-links {
+    display: none;
+}
+      .hero h1 {
+    font-size: 3rem;
+}
+      .hero-buttons,
+.reservation-buttons {
+    flex-direction: column;
+}
+      
+      
+   
+
+   
+ 
+
+
    
    
 
