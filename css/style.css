@@ -1,0 +1,763 @@
+/* =========================
+   GOOGLE FONTS & VARIABLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #080808;
+    --dark: #111111;
+    --coffee: #2D1B13;
+    --gold: #D4AF37;
+    --cream: #F8F2E7;
+    --white: #ffffff;
+    --neon: #00E5FF;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+        LOADER
+========================= */
+
+
+.loader {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.loader h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    letter-spacing: 8px;
+}
+
+
+
+/* =========================
+        NAVBAR
+========================= */
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(20px);
+}
+
+
+.logo {
+    font-size: 2rem;
+    color: var(--gold);
+    font-family: 'Playfair Display';
+    font-weight: 800;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cream);
+    transition: .3s;
+}
+
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+
+.book-btn {
+    background: var(--gold);
+    color: black;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .4s;
+}
+
+
+.book-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* =========================
+        HERO SECTION
+========================= */
+
+
+.hero {
+    min-height: 100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.8)
+    ),
+    url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.hero-content {
+    width: 80%;
+}
+
+
+.tag,
+.section-tag {
+    color: var(--gold);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 5rem;
+    font-family: 'Playfair Display';
+}
+
+
+.hero-text {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
+
+.hero-buttons {
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.primary-btn,
+.secondary-btn,
+.neon-btn {
+    padding: 15px 35px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .4s;
+}
+
+
+.primary-btn {
+    background: var(--gold);
+    color: black;
+}
+
+
+.secondary-btn {
+    border: 1px solid var(--gold);
+    color: var(--cream);
+}
+
+
+.neon-btn {
+    border: 2px solid var(--neon);
+    color: var(--neon);
+    box-shadow:
+    0 0 15px var(--neon);
+}
+
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.neon-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+.rating {
+    margin-top: 30px;
+}
+
+
+/* =========================
+      HIGHLIGHT CARDS
+========================= */
+
+
+.highlights {
+    width: 85%;
+    margin: -70px auto 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+.card {
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .4s;
+}
+
+
+.card span {
+    font-size: 2rem;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--gold);
+}
+
+
+
+/* =========================
+        ABOUT SECTION
+========================= */
+
+
+section {
+    padding: 120px 10%;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.about-text h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+    margin-bottom: 25px;
+}
+
+
+.about-text p {
+    line-height: 1.9;
+}
+
+
+.features {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+
+.features div {
+    background: rgba(255,255,255,.05);
+    padding: 18px;
+    border-radius: 15px;
+}
+
+
+.about-image img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow:
+    0 0 40px rgba(212,175,55,.4);
+}
+
+
+
+/* =========================
+       MENU SECTION
+========================= */
+
+
+.menu {
+    background: linear-gradient(
+        to bottom,
+        #111,
+        #1b120d
+    );
+}
+
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.menu h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+}
+
+
+.menu-categories {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap: 30px;
+}
+
+
+.category-card {
+    background:
+    rgba(255,255,255,.05);
+
+    padding: 35px;
+    border-radius: 25px;
+    transition: .4s;
+}
+
+
+.category-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--gold);
+}
+
+
+.category-card span {
+    font-size: 2rem;
+}
+
+
+.category-card h3 {
+    margin: 20px 0;
+    color: var(--gold);
+}
+
+
+.category-card ul {
+    list-style: none;
+}
+
+
+.category-card li {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}/* =========================
+      CHEF SPECIAL
+========================= */
+
+.chef-special {
+    margin-top: 80px;
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.85)),
+    url("../images/chef-special.jpg");
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    text-align: center;
+    padding: 90px 40px;
+}
+
+.chef-content h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+    margin: 20px 0;
+}
+
+.price {
+    display: block;
+    font-size: 2rem;
+    color: var(--gold);
+    margin: 20px 0;
+}
+
+
+/* =========================
+       GAMING SECTION
+========================= */
+
+.gaming {
+    background: #06080e;
+    position: relative;
+    text-align: center;
+}
+
+.gaming::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    radial-gradient(circle,
+    rgba(0,229,255,.15),
+    transparent 70%);
+}
+
+.gaming-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gaming h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+}
+
+.gaming-features {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+.game-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(0,229,255,.3);
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    transition: .4s;
+}
+
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px var(--neon);
+}
+
+
+.game-card .icon {
+    font-size: 3rem;
+}
+
+
+/* =========================
+          GALLERY
+========================= */
+
+.gallery-header,
+.review-header,
+.contact-header,
+.map-header,
+.social {
+    text-align: center;
+}
+
+
+.gallery-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:
+    repeat(3,1fr);
+    gap: 20px;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.gallery-item .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:.4s;
+}
+
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+.overlay h3 {
+    color: var(--gold);
+}
+
+
+/* =========================
+          REVIEWS
+========================= */
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+
+.review-card {
+    background: rgba(255,255,255,.05);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+
+.stars {
+    color: gold;
+    font-size: 1.3rem;
+}
+
+
+.rating-box {
+    text-align:center;
+    font-size:1.5rem;
+}
+
+
+/* =========================
+       RESERVATION
+========================= */
+
+.reservation {
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.85)),
+    url("../images/reservation.jpg");
+    
+    background-size:cover;
+}
+
+.reservation h2 {
+    font-size:3rem;
+    font-family:'Playfair Display';
+}
+
+.reservation-buttons {
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+.whatsapp-btn {
+    background:#25D366;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+
+/* =========================
+        CONTACT
+========================= */
+
+.contact-container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+
+.info-card,
+.contact-form {
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:20px;
+}
+
+
+.info-card {
+    margin-bottom:20px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width:100%;
+    background:#111;
+    color:white;
+    border:1px solid #444;
+    padding:15px;
+    margin:12px 0;
+    border-radius:10px;
+}
+
+
+.contact-form button {
+    width:100%;
+    padding:15px;
+    background:var(--gold);
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+}
+
+
+/* =========================
+          MAP
+========================= */
+
+.map-container iframe {
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:25px;
+}
+
+
+/* =========================
+          FOOTER
+========================= */
+
+footer {
+    background:#050505;
+    padding:70px 10% 30px;
+}
+
+
+.footer-content {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+
+.footer-logo h2 {
+    color:var(--gold);
+    font-size:2rem;
+}
+
+
+.footer-links a {
+    display:block;
+    color:#ccc;
+    text-decoration:none;
+    margin:10px 0;
+}
+
+
+.footer-bottom {
+    text-align:center;
+    margin-top:40px;
+    border-top:1px solid #222;
+    padding-top:20px;
+}
+
+
+/* =========================
+     FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    text-decoration:none;
+    z-index:1000;
+}
+
+
+/* =========================
+      MOBILE DESIGN
+========================= */
+
+@media(max-width:900px){
+
+.navbar,
+.container,
+.contact-container,
+.footer-content,
+.review-container,
+.gallery-grid,
+.gaming-features,
+.highlights {
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.nav-links {
+    display:none;
+}
+
+.hero h1 {
+    font-size:3rem;
+}
+
+.hero-buttons,
+.reservation-buttons {
+    flex-direction:column;
+}
+
+
