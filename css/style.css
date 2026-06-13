@@ -761,3 +761,720 @@ footer {
 }
 
 
+   /* =========================
+      CHEF SPECIAL
+========================= */
+
+.chef-special {
+    margin-top: 80px;
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.85)),
+    url("../images/chef-special.jpg");
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    text-align: center;
+    padding: 90px 40px;
+}
+
+.chef-content h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+    margin: 20px 0;
+}
+
+.price {
+    display: block;
+    font-size: 2rem;
+    color: var(--gold);
+    margin: 20px 0;
+}
+
+
+/* =========================
+       GAMING SECTION
+========================= */
+
+.gaming {
+    background: #06080e;
+    position: relative;
+    text-align: center;
+}
+
+.gaming::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    radial-gradient(circle,
+    rgba(0,229,255,.15),
+    transparent 70%);
+}
+
+.gaming-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gaming h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+}
+
+.gaming-features {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+.game-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(0,229,255,.3);
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    transition: .4s;
+}
+
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px var(--neon);
+}
+
+
+.game-card .icon {
+    font-size: 3rem;
+}
+
+
+/* =========================
+          GALLERY
+========================= */
+
+.gallery-header,
+.review-header,
+.contact-header,
+.map-header,
+.social {
+    text-align: center;
+}
+
+
+.gallery-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:
+    repeat(3,1fr);
+    gap: 20px;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.gallery-item .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:.4s;
+}
+
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+.overlay h3 {
+    color: var(--gold);
+}
+
+
+/* =========================
+          REVIEWS
+========================= */
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+
+.review-card {
+    background: rgba(255,255,255,.05);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+
+.stars {
+    color: gold;
+    font-size: 1.3rem;
+}
+
+
+.rating-box {
+    text-align:center;
+    font-size:1.5rem;
+}
+
+
+/* =========================
+       RESERVATION
+========================= */
+
+.reservation {
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.85)),
+    url("../images/reservation.jpg");
+    
+    background-size:cover;
+}
+
+.reservation h2 {
+    font-size:3rem;
+    font-family:'Playfair Display';
+}
+
+.reservation-buttons {
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+.whatsapp-btn {
+    background:#25D366;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+
+/* =========================
+        CONTACT
+========================= */
+
+.contact-container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+
+.info-card,
+.contact-form {
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:20px;
+}
+
+
+.info-card {
+    margin-bottom:20px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width:100%;
+    background:#111;
+    color:white;
+    border:1px solid #444;
+    padding:15px;
+    margin:12px 0;
+    border-radius:10px;
+}
+
+
+.contact-form button {
+    width:100%;
+    padding:15px;
+    background:var(--gold);
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+}
+
+
+/* =========================
+          MAP
+========================= */
+
+.map-container iframe {
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:25px;
+}
+
+
+/* =========================
+          FOOTER
+========================= */
+
+footer {
+    background:#050505;
+    padding:70px 10% 30px;
+}
+
+
+.footer-content {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+
+.footer-logo h2 {
+    color:var(--gold);
+    font-size:2rem;
+}
+
+
+.footer-links a {
+    display:block;
+    color:#ccc;
+    text-decoration:none;
+    margin:10px 0;
+}
+
+
+.footer-bottom {
+    text-align:center;
+    margin-top:40px;
+    border-top:1px solid #222;
+    padding-top:20px;
+}
+
+
+/* =========================
+     FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    text-decoration:none;
+    z-index:1000;
+}
+
+
+/* =========================
+      MOBILE DESIGN
+========================= */
+
+@media(max-width:900px){
+
+.navbar,
+.container,
+.contact-container,
+.footer-content,
+.review-container,
+.gallery-grid,
+.gaming-features,
+.highlights {
+    grid-template-columns:1fr;
+    flex-direction:column;
+}
+
+.nav-links {
+    display:none;
+}
+
+.hero h1 {
+    font-size:3rem;
+}
+
+.hero-buttons,
+.reservation-buttons {
+    flex-direction:column;
+}
+   /* =========================
+      CHEF SPECIAL
+========================= */
+
+.chef-special {
+    margin-top: 80px;
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.85)),
+    url("../images/chef-special.jpg");
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    text-align: center;
+    padding: 90px 40px;
+}
+
+.chef-content h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+    margin: 20px 0;
+}
+
+.price {
+    display: block;
+    font-size: 2rem;
+    color: var(--gold);
+    margin: 20px 0;
+}
+
+
+/* =========================
+       GAMING SECTION
+========================= */
+
+.gaming {
+    background: #06080e;
+    position: relative;
+    text-align: center;
+}
+
+.gaming::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    radial-gradient(circle,
+    rgba(0,229,255,.15),
+    transparent 70%);
+}
+
+.gaming-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gaming h2 {
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+}
+
+.gaming-features {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+.game-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(0,229,255,.3);
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    transition: .4s;
+}
+
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px var(--neon);
+}
+
+
+.game-card .icon {
+    font-size: 3rem;
+}
+
+
+/* =========================
+          GALLERY
+========================= */
+
+.gallery-header,
+.review-header,
+.contact-header,
+.map-header,
+.social {
+    text-align: center;
+}
+
+
+.gallery-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:
+    repeat(3,1fr);
+    gap: 20px;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.gallery-item .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:.4s;
+}
+
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+.overlay h3 {
+    color: var(--gold);
+}
+   /* =========================
+          REVIEWS
+========================= */
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+
+.review-card {
+    background: rgba(255,255,255,.05);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+
+.stars {
+    color: gold;
+    font-size: 1.3rem;
+}
+
+
+.rating-box {
+    text-align:center;
+    font-size:1.5rem;
+}
+
+
+/* =========================
+       RESERVATION
+========================= */
+
+.reservation {
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.85)),
+    url("../images/reservation.jpg");
+    
+    background-size:cover;
+}
+
+.reservation h2 {
+    font-size:3rem;
+    font-family:'Playfair Display';
+}
+
+.reservation-buttons {
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+
+.whatsapp-btn {
+    background:#25D366;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+}
+   /* =========================
+        CONTACT
+========================= */
+
+.contact-container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+
+.info-card,
+.contact-form {
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:20px;
+}
+
+
+.info-card {
+    margin-bottom:20px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width:100%;
+    background:#111;
+    color:white;
+    border:1px solid #444;
+    padding:15px;
+    margin:12px 0;
+    border-radius:10px;
+}
+
+
+.contact-form button {
+    width:100%;
+    padding:15px;
+    background:var(--gold);
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+}
+
+
+/* =========================
+          MAP
+========================= */
+
+.map-container iframe {
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:25px;
+}
+   /* =========================
+          FOOTER
+========================= */
+
+footer {
+    background:#050505;
+    padding:70px 10% 30px;
+}
+
+
+.footer-content {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+
+.footer-logo h2 {
+    color:var(--gold);
+    font-size:2rem;
+}
+
+
+.footer-links a {
+    display:block;
+    color:#ccc;
+    text-decoration:none;
+    margin:10px 0;
+}
+
+
+.footer-bottom {
+    text-align:center;
+    margin-top:40px;
+    border-top:1px solid #222;
+    padding-top:20px;
+}
+
+
+/* =========================
+     FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    text-decoration:none;
+    z-index:1000;
+}
+   
+   
+
+
+
+   
+   
+
+
+
+   
+
+
